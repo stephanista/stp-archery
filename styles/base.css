@@ -22,24 +22,24 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 li {
   float: left;
-  border-right: .1rem solid #bbb;
+  border-right: .1rem solid #d6e8b8;
 }
 
 li a {
   display: block;
-  color: white;
+  color: #d6e8b8;
   text-align: center;
-  padding: .8rem 1rem;
+  padding: 3rem 1rem;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #94c840;
+  color: #523e33;
 }
 
 /*body classes*/
@@ -66,8 +66,8 @@ li a:hover {
 
 .logo {
   padding: .25rem;
-  height: 10rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
 }
 
 .logo:hover {
@@ -128,6 +128,29 @@ a {
   color: black;
 }
 
+header {
+  position:fixed;
+  top:0;
+  margin-left: 10rem;
+  background: #523e33;
+  width: 80%;
+  height:7rem;
+  border-radius: .5rem;
+  margin-top: 1rem;
+}
+
 footer {
-  padding-top: 5rem;
+  position:fixed;
+  bottom:0;
+  left:50%;
+  margin-left:-48%;
+  background: #523e33;
+  width:96%;
+  height:5rem;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}
+
+.copyright {
+  color: #d6e8b8;
 }
