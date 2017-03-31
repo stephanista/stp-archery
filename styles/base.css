@@ -10,10 +10,12 @@ header {
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
 }
 
 li {
@@ -24,11 +26,15 @@ li {
 }
 
 li a {
-  display: block;
   color: #d6e8b8;
   text-align: center;
   padding: 3rem 3rem .6rem 3rem;
-  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+li.last {
+  border-right: none;
 }
 
 li a:hover {
@@ -102,11 +108,38 @@ li a:hover {
   color: #d6e8b8;
 }
 
+.initabout {
+  width: 100%;
+}
+
+.initabout p {
+  width: 55%;
+  text-align: left;
+  margin-left: 40%;
+  padding-right: 4rem;
+}
+
+.initabout h1 {
+  width: 45%;
+  text-align: center;
+  margin-left: 40%;
+  padding-right: 1rem;
+}
+
+.initimg {
+  /*max-width: 100%;*/
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 15rem;
+  width: 25rem;
+  float: left;
+}
 
 /*body elements*/
 
 body {
   background-color: #d6e8b8;
+  font-family: 'News Cycle', sans-serif;
 }
 
 h1 {
@@ -131,22 +164,21 @@ h5 {
   text-align: center;
 }
 
-p {
-  text-align: center;
-}
-
 a {
   text-decoration: none;
   color: black;
 }
 
 header {
-  position:fixed;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   top:0;
   margin-left: 10rem;
   background: #523e33;
   width: 80%;
-  height:6rem;
   border-radius: .5rem;
   margin-top: 1rem;
 }
