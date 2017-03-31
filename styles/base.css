@@ -1,0 +1,133 @@
+* { box-sizing: border-box; }
+
+header {
+  background: #d6e8b8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*nav classes*/
+
+.righttop {
+  float: right;
+  color: grey;
+  padding: .8rem 1rem;
+  border-right: none;
+}
+
+/*nav elements*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right: .1rem solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: .8rem 1rem;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/*body classes*/
+
+.introimg {
+  display: block;
+  margin: auto;
+  max-width: 75%;
+  max-width: 75%;
+  padding-top: 3rem;
+}
+
+.projectimg {
+  display: block;
+  margin: auto;
+  max-width: 35%;
+  height: auto;
+  padding-top: 3rem;
+}
+
+.iconcontainer {
+  text-align:center;
+}
+
+.logo {
+  padding: .25rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+.logo:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.copyright {
+  text-align: center;
+  font-style: italic;
+}
+
+.instbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.about {
+  margin: auto;
+  text-align: center;
+}
+
+/*body elements*/
+
+body {
+  background-color: #d6e8b8;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: .5rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+h4 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  padding-top: 5rem;
+}
