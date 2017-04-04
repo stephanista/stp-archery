@@ -135,6 +135,11 @@ li a:hover {
   float: left;
 }
 
+.map {
+  display: block;
+  margin: auto;
+}
+
 /*body elements*/
 
 body {
