@@ -108,14 +108,16 @@ li a:hover {
   color: #d6e8b8;
 }
 
-.initabout {
+.init {
+  display: flex;
   width: 100%;
+  padding-top: 5rem;
 }
 
 .initabout p {
-  width: 55%;
+  width: 50%;
   text-align: left;
-  margin-left: 40%;
+  margin-left: 50%;
   padding-right: 4rem;
 }
 
@@ -127,11 +129,10 @@ li a:hover {
 }
 
 .initimg {
-  /*max-width: 100%;*/
   padding-left: 2rem;
   padding-right: 2rem;
-  height: 15rem;
-  width: 25rem;
+  height: auto;
+  width: 30%;
   float: left;
 }
 
@@ -140,11 +141,69 @@ li a:hover {
   margin: auto;
 }
 
+.muchcontent {
+  background: #eee;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.somecontent {
+  background: #eee;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.content {
+  background: #eee;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+ /* GRIDS! */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid > [class^="grid-"] { flex: none; }*/
+.grid > .grid-cell { flex: 1; }
+
+.grid-col-1  { width: 8.3333%; }
+.grid-col-2  { width: 16.6667%; }
+.grid-col-3  { width: 25%; }
+.grid-col-3:hover {
+  background-color: red;
+}
+.grid-col-4  { width: 33.3333%; }
+.grid-col-5  { width: 41.6667%; }
+.grid-col-6  { width: 50%; }
+.grid-col-6:hover {
+  background-color: blue;
+}
+.grid-col-7  { width: 58.3333%; }
+.grid-col-8  { width: 66.6667%; }
+.grid-col-9  { width: 75%; }
+.grid-col-10 { width: 83.3333%; }
+.grid-col-11 { width: 91.6667%; }
+
+.grid-guttered > [class^="grid-"] {
+  padding: 1rem 1rem 0 0;
+}
+
+.grid-guttered > [class^="grid-"]:last-child {
+  padding-right: 0;
+}
+
+
 /*body elements*/
 
 body {
   background-color: #d6e8b8;
   font-family: 'News Cycle', sans-serif;
+
 }
 
 h1 {
@@ -187,15 +246,18 @@ header {
   border-radius: .5rem;
   margin-top: 1rem;
 }
+ main {
+  height: 80%;
+ }
 
 footer {
-  position:fixed;
+  /*position:fixed;*/
   bottom:0;
   left:50%;
-  margin-left:-48%;
+  /*margin-left:-48%;*/
   background: #523e33;
-  width:96%;
-  height:5rem;
+  width:100%;
+  height: 20%;
   border-radius: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 5rem;
 }
